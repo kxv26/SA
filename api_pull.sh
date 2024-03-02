@@ -1,3 +1,4 @@
-curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/GeyserMC/Geyser/pulls > pulls.txt
-curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/GeyserMC/Geyser/commits > commits.txt
-curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/GeyserMC/Geyser/issues > issues.txt
+mkdir $1_$2
+curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/$1/$2/pulls > $1_$2/pulls.txt
+curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/$1/$2/commits > $1_$2/commits.txt
+curl -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/$1/$2/issues > $1_$2/issues.txt
